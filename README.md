@@ -11,5 +11,5 @@ go to the branches window and press the little "+" sign at the right of an exist
 when it sees blank lines. See [markdown] (http://daringfireball.net/projects/markdown/) 
 
 []Q: Can I put links in here? 
--[Test 1] (http://nymets37.github.com/yearup/)
+-[Test 1] (http://nymets37.github.com/yearup/) Yes! http://nymets37.github.com/yearup/ works!
 -[Test 2] (http://nymets37.github.com/yearup/index2.html)
