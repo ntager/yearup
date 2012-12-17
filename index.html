@@ -4,64 +4,83 @@
        <meta charset="utf-8" />
        <title>YearUp.Org Mobile Website</title>
        <style type="text/css">
-        a:link {text-decoration:none; color:black;}
+	a:link {text-decoration:none; color:black;}
 	a:visited {text-decoration:none; color:black;}
+
 	.logo { 
+		/* works better to apply this to the logo itself rather than to the div that holds the logo img */
 		width: 100%; 
 		min-width:146px;
 		min-height: 53px;
 		max-width:292px;
 		max-height:106px;
 	}
-   .logo_2 {
+	.logo_2 {
+		/* unsuccessful experiment with stretchy logo. */
 		/* this is only partly working: the image isn't re-sizing. */
-	   width:  100%; /* 292px; */
-	   height: auto; /* 106px; */
-	   min-width:146px;
-	   min-height: 53px;
-	   max-width:292px;
-	   max-height:106px;
-	   background-color: white; /* transparent !important; */
-	   /* background-image:url("images/logo146x53.png"); */
-	   background-repeat:no-repeat;
-	   /* background-size: 100% /* contain; only filled to full size */
+		width:  100%; /* 292px; */
+		height: auto; /* 106px; */
+		min-width:146px;
+		min-height: 53px;
+		max-width:292px;
+		max-height:106px;
+		background-color: white; /* transparent !important; */
+		/* background-image:url("images/logo146x53.png"); */
+		background-repeat:no-repeat;
+		/* background-size: 100% /* contain; only filled to full size */
 		/* http://www.w3schools.com/cssref/css3_pr_background-size.asp
 		100% auto; /*width and height, can be %, px or whatever. */
-   }
+	}
    
-   /* minimal working style for floating sections and full-width main footer:
-   footer { clear:both; background-color: #00f; }
-   */
+	/* minimal working style for floating sections and full-width main footer:
+	footer { clear:both; background-color: #00f; }
+	*/
 
-   footer {
-		   clear:both; background-color: red;/* "clear:both" makes sure the footer fills the whole screen and doesn't have columns from above bumping down into our footer zone. */
-   }
-   header, section, footer, article {
+	footer {
+		   clear:both; 
+		   background-color: red;
+		   /* "clear:both" makes sure the footer fills the whole screen and doesn't have 
+		   columns from above bumping down into our footer zone. */
+	}
+	header, section, footer, article {
 		   text-align:center;
-   }
-   header, footer { /* background: #ccc; font-size:0.75em; */ }
-   article header, article footer { background: #9f9;  }
-   .menu {width: 400px;}
-   .news { 
-   background:#F00; float: left; width: 100%; 
-   }
-   .links { /* note: we're not using this currently */
+	}
+	header, footer { /* background: #ccc; font-size:0.75em; */ }
+	article header, article footer { background: #9f9;  }
+	.menu {width: 400px;}
+	.news { 
+		background:#999; /* medium gray */ 
+		float: left; 
+		width: 100%; 
+	}
+	.links { /* note: we're not using this currently */
 	   width:100%;
 	   background:#0f0; /* was cfc, looked white */
 	   font-style:normal;
 	   font-size: 3em; /* 18px; don't use px for font size: some people like big or small */
-	   font-family:Tahoma, sans-serif; /* Mike has added a "sans-serif" option as a fallback position in case the browser doesn't have Tahoma font. */
+	   font-family:Tahoma, sans-serif; /* Mike has added a "sans-serif" option as a fallback 
+	   position in case the browser doesn't have Tahoma font. */
 
-   }
-   
-   .major_link {
+	}
+
+	.major_link {
 		font-size: 1.5em;
 		font-family:Tahoma, sans-serif;
-	   /* padding: 0.1em 1em;  means 0.25em for top/bottom; and padding-left:2em; padding-right:2em; */
-	   width:25%; /* hmmm, not working in span? But perhaps not necessary? */
-	   float:left; /* might not be necessary unless we go resume using divs? */
-	   background:#F00; /* red */
-   }
+		/* padding: 0.1em 1em;  means 0.25em for top/bottom; and padding-left:2em; padding-right:2em; */
+		width:25%; /* hmmm, not working in span? But perhaps not necessary? */
+		float:left; /* might not be necessary unless we go resume using divs? */
+		background:#F00; /* red */
+	}
+
+	.minor_link {
+		font-size: 1.3em;
+		font-family:Tahoma, sans-serif;
+		/* padding: 0.1em 1em;  means 0.25em for top/bottom; and padding-left:2em; padding-right:2em; */
+		width:25%; /* hmmm, not working in span? But perhaps not necessary? */
+		float:left; /* might not be necessary unless we go resume using divs? */
+		background:#0F0; /* green */
+	}
+
    
    nav {
 		width:100%; 
@@ -71,12 +90,12 @@
 		/*min-height: 53px;*/
 		max-width:30em;
 		/* max-height:106px; */
-
-   }
-   /* unnecessary:
-   body.footer { display:block; overflow:auto; }
-   */
-       </style>
+	}
+	
+	/* unnecessary:
+	body.footer { display:block; overflow:auto; }
+	*/
+	</style>
        
        <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <!-- for iphone  
@@ -88,7 +107,8 @@
 <body>
 <header><!--img src="http://yearup.org/images/global/logo.png" alt="Year Up Logo" /-->
 <div title="Year Up Logo" ><img class="logo" src="images/logo146x53.png" alt="logo146x53.png"  /> <!-- width="146" height="53" -->
-<!-- empty since the style will put the logo in, I hope --></div>
+<!-- was going to be empty but style wasn't putting stretchy image --></div>
+
 <nav>
 <div class="major_link"><!--using a word that isn't link so we can see that links get special styles automatically --><a href="http://yearup.org/students_alumni/main.php?page=student_interest_form">Apply</a>
 </div>
@@ -99,6 +119,14 @@
 </div>
 <div class="major_link"><a href="https://npo1.networkforgood.org/Donate/Donate.aspx?npoSubscriptionId=610">Donate</a>
 </div>
+
+<!-- Now let's have some minor links... -->
+<!-- Noah's list from google site: [x]Opportunity Divide , [x]About Year Up , Locations , Students and Alumni , Partners , Supporters , Media & Events , News -->
+<div class="minor_link"><a href="http://yearup.org/opportunity.php">Opportunity Divide</a></div>
+<div class="minor_link"><a href="http://yearup.org/about/main.php?page=aboutus">About Year Up</a></div>
+
+
+
 </nav>
 </header>
 <div class="news">
