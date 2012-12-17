@@ -10,5 +10,4 @@ go to the branches window and press the little "+" sign at the right of an exist
 [x]Q: How to put returns into this "readme.md"? A: It is a "markdown" file, which puts returns
 when it sees blank lines. See [markdown] (http://daringfireball.net/projects/markdown/) 
 
-[]Q: Can I put links in here? [Test one] (http://nymets37.github.com/yearup/)
-
+[x]Q: Can I put links in here? A: Yes! http://nymets37.github.com/yearup/ works!
