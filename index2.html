@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="utf-8" />
+       <title>YearUp.Org Mobile Website</title>
+       <style type="text/css">
+        a:link {text-decoration:none; color:black;}
+	a:visited {text-decoration:none; color:black;}
+	.logo { 
+		width: 100%; 
+		min-width:146px;
+		min-height: 53px;
+		max-width:292px;
+		max-height:106px;
+	}
+   .logo_2 {
+		/* this is only partly working: the image isn't re-sizing. */
+	   width:  100%; /* 292px; */
+	   height: auto; /* 106px; */
+	   min-width:146px;
+	   min-height: 53px;
+	   max-width:292px;
+	   max-height:106px;
+	   background-color: white; /* transparent !important; */
+	   /* background-image:url("images/logo146x53.png"); */
+	   background-repeat:no-repeat;
+	   /* background-size: 100% /* contain; only filled to full size */
+		/* http://www.w3schools.com/cssref/css3_pr_background-size.asp
+		100% auto; /*width and height, can be %, px or whatever. */
+   }
+   
+   /* minimal working style for floating sections and full-width main footer:
+   footer { clear:both; background-color: #00f; }
+   */
+
+   footer {
+		   clear:both; background-color: red;/* "clear:both" makes sure the footer fills the whole screen and doesn't have columns from above bumping down into our footer zone. */
+   }
+   header, section, footer, article {
+		   text-align:center;
+   }
+   header, footer { /* background: #ccc; font-size:0.75em; */ }
+   article header, article footer { background: #9f9;  }
+   .menu {width: 400px;}
+   .news { 
+   background:#F00; float: left; width: 100%; 
+   }
+   .links { /* note: we're not using this currently */
+	   width:100%;
+	   background:#0f0; /* was cfc, looked white */
+	   font-style:normal;
+	   font-size: 3em; /* 18px; don't use px for font size: some people like big or small */
+	   font-family:Tahoma, sans-serif; /* Mike has added a "sans-serif" option as a fallback position in case the browser doesn't have Tahoma font. */
+
+   }
+   
+   .major_link {
+		font-size: 1.5em;
+		font-family:Tahoma, sans-serif;
+	   /* padding: 0.1em 1em;  means 0.25em for top/bottom; and padding-left:2em; padding-right:2em; */
+	   width:25%; /* hmmm, not working in span? But perhaps not necessary? */
+	   float:left; /* might not be necessary unless we go resume using divs? */
+	   background:#F00; /* red */
+   }
+   
+   nav {
+		width:100%; 
+		margin-left:auto;
+		margin-right:auto;
+		min-width:10em;
+		/*min-height: 53px;*/
+		max-width:30em;
+		/* max-height:106px; */
+
+   }
+   /* unnecessary:
+   body.footer { display:block; overflow:auto; }
+   */
+       </style>
+       
+       <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<!-- for iphone  
+       note: "maximum-scale=5.0; minimum-scale=0.1" is possible but unnecessary?
+       note: "user-scalable=true;" doesn't work, actually disallows scaling. -->
+</head>
+
+
+<body>
+<header><!--img src="http://yearup.org/images/global/logo.png" alt="Year Up Logo" /-->
+<div title="Year Up Logo" ><img class="logo" src="images/logo146x53.png" alt="logo146x53.png"  /> <!-- width="146" height="53" -->
+<!-- empty since the style will put the logo in, I hope --></div>
+<nav>
+<div class="major_link"><!--using a word that isn't link so we can see that links get special styles automatically --><a href="http://yearup.org/students_alumni/main.php?page=student_interest_form">Apply</a>
+</div>
+<div class="major_link"><a href="http://www.yearup.org/partners/main.php?page=corporate_partners&amp;sub_section=newyork">Partner</a>
+<!-- mike fixed this link and the next one to say "&amp;sub_section=" instead of "&sub_section=" because ampersand by itself is a special character inside html. -->
+</div>
+<div class="major_link"><a href="http://www.yearup.org/supporters/main.php?page=volunteer_interest_form&amp;sub_section=newyork">Volunteer</a>
+</div>
+<div class="major_link"><a href="https://npo1.networkforgood.org/Donate/Donate.aspx?npoSubscriptionId=610">Donate</a>
+</div>
+</nav>
+</header>
+<div class="news">
+<p>This is section one. Hey Noah, Mike has put the links into the "&lt;header>" zone inside a "&lt;nav>" block, which is a named thing provided by HTML5 for just this kind of situation: a bunch of navigation links at the top of a page. I've edited the style commands so our links don't have the "float:left" and I've also removed the "width:25%" temporarily, (wondering whether the links should be so wide when someone is using a wide screen device).</p>
+<p>PS: Noah, I'm trying to move all the styling info into the "&lt;style" zone at the top, to let the "&lt;body>" be as simple as possible. This way we can have one stylesheet for all of our mobile pages.</p>
+</div>
+<footer>
+Main Footer <br />
+(Page by mjr, 2011 oct 27, based on book "HTML5 and CSS3" by Brian P. Hogan, published by "Pragmatic Programmers" July 2011)
+</footer>
+</body>
+</html>
