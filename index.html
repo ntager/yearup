@@ -47,7 +47,7 @@
 	}
 	header, footer { /* background: #ccc; font-size:0.75em; */ }
 	article header, article footer { background: #9f9;  }
-	.menu {width: 400px;}
+	/* .menu {width: 400px;}  */
 	.news { 
 		background:#999; /* medium gray */ 
 		float: left; 
@@ -67,9 +67,10 @@
 		font-size: 1.5em;
 		font-family:Tahoma, sans-serif;
 		/* padding: 0.1em 1em;  means 0.25em for top/bottom; and padding-left:2em; padding-right:2em; */
-		width:25%; /* hmmm, not working in span? But perhaps not necessary? */
+		width:24.5%; /* hmmm, not working in span? But perhaps not necessary? */
 		float:left; /* might not be necessary unless we go resume using divs? */
 		background:#F00; /* red */
+		border: thin black solid;
 	}
 
 	.minor_link {
@@ -89,7 +90,7 @@
 		margin-right:auto;
 		min-width:10em;
 		/*min-height: 53px;*/
-		max-width:30em;
+		max-width:31em;
 		/* max-height:106px; */
 	}
 	
@@ -113,10 +114,12 @@
 <nav>
 <div class="major_link"><!--using a word that isn't link so we can see that links get special styles automatically --><a href="http://yearup.org/students_alumni/main.php?page=student_interest_form">Apply</a>
 </div>
-<div class="major_link"><a href="http://www.yearup.org/partners/main.php?page=corporate_partners&amp;sub_section=newyork">Partner</a>
+<!-- the main yearup website is linking directly to sub_section=newyork instead of national, oops! -->
+<div class="major_link"><a href="http://www.yearup.org/partners/main.php?page=corporate_partners&amp;sub_section=national">Partner</a>
 <!-- mike fixed this link and the next one to say "&amp;sub_section=" instead of "&sub_section=" because ampersand by itself is a special character inside html. -->
 </div>
-<div class="major_link"><a href="http://www.yearup.org/supporters/main.php?page=volunteer_interest_form&amp;sub_section=newyork">Volunteer</a>
+<!-- it would be nice if browser knew your location and sent you to the proper sub_section?? -->
+<div class="major_link"><a href="http://www.yearup.org/supporters/main.php?page=volunteer_interest_form&amp;sub_section=national">Volunteer</a>
 </div>
 <div class="major_link"><a href="https://npo1.networkforgood.org/Donate/Donate.aspx?npoSubscriptionId=610">Donate</a>
 </div>
@@ -125,9 +128,9 @@
 <!-- Noah's list from google site: [x]Opportunity Divide , [x]About Year Up , Locations , Students and Alumni , Partners , Supporters , Media & Events , News -->
 <div class="minor_link"><a href="http://yearup.org/opportunity.php">Opportunity Divide</a></div>
 <div class="minor_link"><a href="http://yearup.org/about/main.php?page=aboutus">About Year Up</a></div>
-<div class="minor_link"><a href="http://yearup.org/locations/main.php?page=locations">Locations</a></a></div>
+<div class="minor_link"><a href="http://yearup.org/locations/main.php?page=locations">Locations</a></div>
 <div class="minor_link"><a href="http://yearup.org/students_alumni/main.php?page=students_alumni">Students and Alumni</a></div>
-<div class="minor_link"><a href="http://yearup.org/partners/main.php?page=partners&sub_section=national">Partners</a></div>
+<div class="minor_link"><a href="http://yearup.org/partners/main.php?page=partners&amp;sub_section=national">Partners</a></div>
 <div class="minor_link"><a href="http://yearup.org/supporters/main.php?page=supporters">Supporters</a></div>
 <div class="minor_link"><a href="http://yearup.org/media/main.php?page=media">Media and Events</a></div>
 
