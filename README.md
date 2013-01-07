@@ -11,3 +11,9 @@ go to the branches window and press the little "+" sign at the right of an exist
 when it sees blank lines. See [markdown] (http://daringfireball.net/projects/markdown/) 
 
 [x]Q: Can I put links in here? A: Yes! http://nymets37.github.com/yearup/ works!
+
+
+notes
+=====
+The official yearup webpage is using sub_section=newyork for partners and volunteers but probably ought to be using sub_section=national
+
