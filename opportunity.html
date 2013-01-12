@@ -4,16 +4,18 @@
        <meta charset="utf-8" />
        <title>YearUp.Org Mobile Website</title>
        <style type="text/css">
-a:link {text-decoration:none;}
-a:visited {text-decoration:none;}
+a.major_link:link {text-decoration:none; color: white;}
+a.major_link:visited {text-decoration:none; color: white;}
+a.important_text:link {text-decoration:none; color:#FF8C00;}
+a.important_text:visited {text-decoration:none; color:#FF8C00;}
 
 .logo {
 /* works better to apply this to the logo itself rather than to the div that holds the logo img */
 width: 100%;
 min-width:146px;
 min-height: 53px;
-max-width:292px;
-max-height:106px;
+max-width:219px;
+max-height:79.5px;
 }
 .logo_2 {
 /* unsuccessful experiment with stretchy logo. */
@@ -69,12 +71,14 @@ position in case the browser doesn't have Tahoma font. */
 }
 
 .major_link {
+font-style:bold;
 font-size: 1.5em;
 font-family:Tahoma, sans-serif;
 /* padding: 0.1em 1em; means 0.25em for top/bottom; and padding-left:2em; padding-right:2em; */
 width:25%; /* hmmm, not working in span? But perhaps not necessary? */
-float:left; /* might not be necessary unless we go resume using divs? */
-background:white; /* white */
+float:left;/* might not be necessary unless we go resume using divs? */
+color: white;
+background:blue; /* white */
 }
 
 .minor_link {
@@ -132,20 +136,18 @@ note: "user-scalable=true;" doesn't work, actually disallows scaling. -->
 <div class="news">
 <a>
 <center><h1 style="color:blue;">What is the Opportunity Divide?</h1></center>
-<p><b>6 million young adults</b> with no more than a high school diploma are out of work, out of school and without access to the economic mainstream.  But they have a lot of talent.
-</br>
-Year Up connects young adults who need opportunites to companies who need talent.
-</br>
-<b>14 million jobs</b> requiring post-secondary eductation will go unfilled in the next decade.</p>
+<p><b>6 million young adults</b> with no more than a high school diploma are out of work, out of school and without access to the economic mainstream.  But they have a lot of talent.</p>
+<p>Year Up connects young adults who need opportunites to companies who need talent.</p>
+<p><b>14 million jobs</b> requiring post-secondary eductation will go unfilled in the next decade.</p>
 <center><h1 style="color:blue;">Two sides of a city, worlds apart.</h1></center>
 <p><h3 class="important_text">We are wasting talent when we can't afford to waste anyone.</h2>
 Millions of young adults in this country are facing social and economic injustice. Despite talent and motivation, they lack access to higher education and careers that provide them with a living wage. At the same time, our economy needs help. U.S. businesses are calling for more and better-trained talent to compete on the global stage, but there will not be enough skilled workers to meet that demand.</p>
-<p><h2 class="important_text">Economic justice = Economic prosperity.</h2>
+<p><h3 class="important_text">Economic justice = Economic prosperity.</h2>
 These are troubling realities, but they represent a tremendous national opportunity. Providing underserved young adults with the skills, knowledge and experience today's businesses demand ensures those young adults will begin successful careers and earn a living wage. In return, employers gain access to a wider pipeline of well-trained talent than ever before —the talent they need to compete across the globe.</p>
 <p><h3 class="important_text">A hand up, not a hand out.</h3>
 This is not charity, nor a handout. This is good sense. Economic justice for young adults equals economic prosperity for U.S. businesses, and the nation at large.        
 </p>
-<p><h3 class="important_text"><a href="http://www.yearup.org/media/main.php?page=stories&vid=GOKtUJFGm78&filter=partners">Read student stories</a></h3></p>
+<p><h2 class="important_text"><a href="http://www.yearup.org/media/main.php?page=stories&vid=GOKtUJFGm78&filter=partners">Read student stories</a></h3></p>
 </a>
 </div>
 <footer>
