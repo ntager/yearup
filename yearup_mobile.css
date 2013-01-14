@@ -1,0 +1,106 @@
+
+a.major_link:link {text-decoration:none; color: #00008B;}
+a.major_link:visited {text-decoration:none; color: #00008B;}
+a.important_text:link {text-decoration:none; color:#FF8C00;}
+a.important_text:visited {text-decoration:none; color:#FF8C00;}
+
+.logo {
+	/* works better to apply this to the logo itself rather than to the div that holds the logo img */
+	width: 100%;
+	min-width:146px;
+	min-height: 53px;
+	max-width:219px;
+	max-height:79.5px;
+}
+.logo_2 {
+	/* unsuccessful experiment with stretchy logo. */
+	/* this is only partly working: the image isn't re-sizing. */
+	width: 100%; /* 292px; */
+	height: auto; /* 106px; */
+	min-width:146px;
+	min-height: 53px;
+	max-width:292px;
+	max-height:106px;
+	background-color: white; /* transparent !important; */
+	/* background-image:url("images/logo146x53.png"); */
+	background-repeat:no-repeat;
+	/* background-size: 100% /* contain; only filled to full size */
+	/* http://www.w3schools.com/cssref/css3_pr_background-size.asp
+	100% auto; /*width and height, can be %, px or whatever. */
+}
+   
+/* minimal working style for floating sections and full-width main footer:
+footer { clear:both; background-color: #00f; }
+*/
+
+footer {
+	clear:both;
+	background-color: white;
+	/* "clear:both" makes sure the footer fills the whole screen and doesn't have
+	columns from above bumping down into our footer zone. */
+}
+header, section, footer, article {
+	text-align:center;
+}
+
+header, footer { /* background: #ccc; font-size:0.75em; */ }
+
+article header, article footer { background: #9f9; }
+/* .menu {width: 400px;} */
+
+.news {
+	background:#FFF; /* white */
+	float: left;
+	width: 100%;
+	font-family:Tahoma, sans-serif;
+}
+
+.important_text {
+	font-weight:bold;
+	color:#FF8C00;
+}
+
+.links { /* note: we're not using this currently */
+	width:100%;
+	background:#0f0; /* was cfc, looked white */
+	font-style:normal;
+	font-size: 3em; /* 18px; don't use px for font size: some people like big or small */
+	font-family:Tahoma, sans-serif; /* Mike has added a "sans-serif" option as a fallback
+	position in case the browser doesn't have Tahoma font. */
+
+}
+
+.major_link {
+	font-weight: bold;
+	font-size: 1.2em;
+	font-family:Tahoma, sans-serif;
+	/* padding: 0.1em 1em; means 0.25em for top/bottom; and padding-left:2em; padding-right:2em; */
+	width:25%; /* hmmm, not working in span? But perhaps not necessary? */
+	float:left;/* might not be necessary unless we go resume using divs? */
+	color: #00008B;
+}
+
+.minor_link {
+	font-size: 1.3em;
+	font-family:Tahoma, sans-serif;
+	/* padding: 0.1em 1em; means 0.25em for top/bottom; and padding-left:2em; padding-right:2em; */
+	width:100%; /* hmmm, not working in span? But perhaps not necessary? */
+	float:left; /* might not be necessary unless we go resume using divs? */
+	background:#0F0; /* green */
+	border: thin black solid;
+}
+
+   
+nav {
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	min-width:10em;
+	/*min-height: 53px;*/
+	max-width:31em;
+	/* max-height:106px; */
+}
+
+/* unnecessary:
+body.footer { display:block; overflow:auto; }
+*/
