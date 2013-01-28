@@ -79,9 +79,11 @@ h3 {
 	font-weight: bold;
 	font-size: 1.2em;
 	font-family:Tahoma, sans-serif;
-	/* padding: 0.1em 1em; means 0.25em for top/bottom; and padding-left:2em; padding-right:2em; */
-	width:25%; /* hmmm, not working in span? But perhaps not necessary? */
-	float:left;/* might not be necessary unless we go resume using divs? */
+	line-height: 1.8em;
+	margin: 0.1em 0.05em; /* space outside the border! 1st number means top&bottom; 2nd means left&right? */
+	padding: 0.1em 0.3em; /* space inside the border! first number means top&bottom; and 2nd number means left&right padding-left:2em; padding-right:2em; */
+	width:24%; /* hmmm, not working in span? But perhaps not necessary? */
+	/* float:left;/* might not be necessary unless we resume using divs? */
 	color: #00008B;
 	border: thin black solid;
 }
