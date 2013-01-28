@@ -60,6 +60,11 @@ article header, article footer { background: #9f9; }
 	color:#FF8C00;
 }
 
+h3 {
+	color:red;
+	text-align:center;
+}
+
 .links { /* note: we're not using this currently */
 	width:100%;
 	background:#0f0; /* was cfc, looked white */
@@ -78,6 +83,7 @@ article header, article footer { background: #9f9; }
 	width:25%; /* hmmm, not working in span? But perhaps not necessary? */
 	float:left;/* might not be necessary unless we go resume using divs? */
 	color: #00008B;
+	border: thin black solid;
 }
 
 .minor_link {
