@@ -103,8 +103,8 @@ h4 {
 	/* padding: 0.1em 1em; means 0.25em for top/bottom; and padding-left:2em; padding-right:2em; */
 	/* hmmm, not working in span? But perhaps not necessary? */
 	background-color: #224096;
-	margin: 0.2em 0.2em;
-	padding: 0.2em 0.2em;
+margin-top:.2em;
+margin-bottom:.2em;
 	border: thin black solid;
 }
 
