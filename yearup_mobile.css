@@ -60,7 +60,7 @@ article header, article footer { background: #9f9; }
 }
 
 h3 {
-	color:red;
+	color:blue;
 	text-align:center;
 }
 
@@ -77,7 +77,7 @@ h3 {
 .major_link {
 	font-weight: normal;
 	font-size: 1.2em;
-	font-family:Tahoma, sans-serif;
+	font-family: Trebuchet MS, sans-serif;
 	line-height: 1.8em;
 	margin: 0.1em 0.05em; /* space outside the border! 1st number means top&bottom; 2nd means left&right? */
 	padding: 0.1em 0.3em; /* space inside the border! first number means top&bottom; and 2nd number means left&right padding-left:2em; padding-right:2em; */
