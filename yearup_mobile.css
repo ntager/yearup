@@ -101,9 +101,10 @@ h4 {
 	text-align: center;
 	font-family:Trebuchet MS, sans-serif;
 	/* padding: 0.1em 1em; means 0.25em for top/bottom; and padding-left:2em; padding-right:2em; */
-	width: 400px; /* hmmm, not working in span? But perhaps not necessary? */
+	/* hmmm, not working in span? But perhaps not necessary? */
 	background-color: #224096;
-	margin: .2em .2em;
+	margin: 0.2em 0.2em;
+	padding: 0.2em 0.2em;
 	border: thin black solid;
 }
 
