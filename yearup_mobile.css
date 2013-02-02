@@ -1,4 +1,3 @@
-
 a.major_link:link {text-decoration:none; color: #00008B;}
 a.major_link:visited {text-decoration:none; color: #00008B;}
 a.important_text:link {text-decoration:none; color:#FF8C00;}
@@ -82,10 +81,10 @@ h3 {
 	line-height: 1.8em;
 	margin: 0.1em 0.05em; /* space outside the border! 1st number means top&bottom; 2nd means left&right? */
 	padding: 0.1em 0.3em; /* space inside the border! first number means top&bottom; and 2nd number means left&right padding-left:2em; padding-right:2em; */
-	width:24%; /* hmmm, not working in span? But perhaps not necessary? */
+	width:25%; /* hmmm, not working in span? But perhaps not necessary? */
 	/* float:left;/* might not be necessary unless we resume using divs? */
-	color: #00008B;
-	border: thin black solid;
+	color: #FFF;
+	background-color: blue;
 }
 
 .minor_link {
