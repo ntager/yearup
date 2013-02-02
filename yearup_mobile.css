@@ -4,6 +4,8 @@ a.important_text:link {text-decoration:none; color:#FF8C00;}
 a.important_text:visited {text-decoration:none; color:#FF8C00;}
 a.h4:link {text-decoration:none; color: #224096;}
 a.h4:visited {text-decoration:none; color: #224096;}
+a.minor_link:link {text-decoration:none; color: #FFF;}
+a.minor_link:visited {text-decoration:none; color: #FFF;}
 .logo {
 	/* works better to apply this to the logo itself rather than to the div that holds the logo img */
 	width: 100%;
@@ -95,24 +97,20 @@ h4 {
 
 .minor_link {
 	font-size: 1em;
+	color: #FFF;
 	text-align: center;
 	font-family:Trebuchet MS, sans-serif;
-	line-height: 1.8em;
 	/* padding: 0.1em 1em; means 0.25em for top/bottom; and padding-left:2em; padding-right:2em; */
 	width: 400px; /* hmmm, not working in span? But perhaps not necessary? */
 	background-color: #224096;
 	margin: .2em;
+	border: thin black solid;
 }
 
    
 nav {
-	width:100%;
-	margin-left:auto;
-	margin-right:auto;
-	min-width:10em;
-	/*min-height: 53px;*/
-	max-width:31em;
-	/* max-height:106px; */
+	min-width: 160px;
+	max-width:400px;
 }
 
 /* unnecessary:
