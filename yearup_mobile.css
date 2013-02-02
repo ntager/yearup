@@ -2,7 +2,8 @@ a.major_link:link {text-decoration:none; color: #FFF;}
 a.major_link:visited {text-decoration:none; color: #FFF;}
 a.important_text:link {text-decoration:none; color:#FF8C00;}
 a.important_text:visited {text-decoration:none; color:#FF8C00;}
-
+a.h3:link {text-decoration:none; color: #224096;}
+a.h3:visited {text-decoration:none; color: #224096;}
 .logo {
 	/* works better to apply this to the logo itself rather than to the div that holds the logo img */
 	width: 100%;
@@ -56,7 +57,7 @@ article header, article footer { background: #9f9; }
 
 .important_text {
 	font-weight:bold;
-	color:#FF8C00;
+	color:#224096;
 }
 
 h3 {
