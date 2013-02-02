@@ -60,7 +60,7 @@ article header, article footer { background: #9f9; }
 }
 
 h3 {
-	color:blue;
+	color: #224096;
 	text-align:center;
 }
 
@@ -84,7 +84,7 @@ h3 {
 	width:25%; /* hmmm, not working in span? But perhaps not necessary? */
 	/* float:left;/* might not be necessary unless we resume using divs? */
 	color: #FFF;
-	background-color: #3399CC;
+	background-color: #224096;
 }
 
 .minor_link {
