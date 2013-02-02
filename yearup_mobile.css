@@ -100,12 +100,14 @@ h4 {
 	color: #FFF;
 	text-align: center;
 	font-family:Trebuchet MS, sans-serif;
+	line-height: 1.8em;
 	/* padding: 0.1em 1em; means 0.25em for top/bottom; and padding-left:2em; padding-right:2em; */
 	/* hmmm, not working in span? But perhaps not necessary? */
 	background-color: #224096;
 margin-top:.2em;
 margin-bottom:.2em;
-	border: thin black solid;
+padding-top: 0.2em;
+padding-bottom:0.2em;
 }
 
    
