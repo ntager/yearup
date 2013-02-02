@@ -99,7 +99,7 @@ h4 {
 font-size: 1em;
 font-family:Trebuchet MS, sans-serif;
 /* padding: 0.1em 1em; means 0.25em for top/bottom; and padding-left:2em; padding-right:2em; */
-width:16em; /* hmmm, not working in span? But perhaps not necessary? */
+width:18em; /* hmmm, not working in span? But perhaps not necessary? */
 margin-right: auto;
 margin-left:auto; /* might not be necessary unless we go resume using divs? */
 background:#224096; /* green */
