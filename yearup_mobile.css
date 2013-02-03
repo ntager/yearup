@@ -108,10 +108,13 @@ margin-bottom: .2em;
 }
  
 nav {
-	min-width: 160px;
-	max-width:400px;
-  margin-left: auto ;
-  margin-right: auto ;
+	margin-right: auto;
+	margin-left: auto;
+	min-width: 200px;
+	max-width: 500px;
+text-align: justify;
+    text-justify: distribute-all-lines;
+
 }
 
 /* unnecessary:
