@@ -41,21 +41,616 @@ note: "user-scalable=true;" doesn't work, actually disallows scaling. -->
 
 </header>
 <div class="news">
-<a>
-<h3>What is the Opportunity Divide?</h3>
-<p><b>6 million young adults</b> with no more than a high school diploma are out of work, out of school and without access to the economic mainstream. But they have a lot of talent.</p>
-<p>Year Up connects young adults who need opportunites to companies who need talent.</p>
-<p><b>14 million jobs</b> requiring post-secondary education will go unfilled in the next decade.</p>
-<h3>Two sides of a city, worlds apart.</h3>
+<h3>Volunteer Interest Form</h3>
+       <p>Thank you for your interest in volunteering at Year Up New York!</p>
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<head>
+    <title>PHP FormMail Generator - A free tool to create ready-to-use web email forms with file upload, auto-response email, and dependent dropdowns.</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="PHP FormMail Generator, Free Form, Form Builder, Form Creator, phpFormMailGen, Customized Web Forms, phpFormMailGenerator,formmail.php, formmail.pl, formMail Generator, ASP Formmail, ASP form, PHP Form, Generator, phpFormGen, phpFormGenerator, anti-spam, web hosting">
+    <meta name="description" content="PHP formMail Generator - A tool to ceate ready-to-use web forms in a flash">
+    <meta name="generator" content="PHP Mail Form Generator, phpfmg.sourceforge.net">
+</head>
+<body>
 
-<p><h3 class="important_text">We are wasting talent when we can't afford to waste anyone.</h3>
-Millions of young adults in this country are facing social and economic injustice. Despite talent and motivation, they lack access to higher education and careers that provide them with a living wage. At the same time, our economy needs help. U.S. businesses are calling for more and better-trained talent to compete on the global stage, but there will not be enough skilled workers to meet that demand.</p>
+<style type='text/css'>
 
-<p><h3 class="important_text">Economic justice = Economic prosperity.</h3>
-These are troubling realities, but they represent a tremendous national opportunity. Providing underserved young adults with the skills, knowledge and experience today's businesses demand ensures those young adults will begin successful careers and earn a living wage. In return, employers gain access to a wider pipeline of well-trained talent than ever before —the talent they need to compete across the globe.</p>
-<p><h3 class="important_text">A hand up, not a hand out.</h3>
-This is not charity, nor a handout. This is good sense. Economic justice for young adults equals economic prosperity for U.S. businesses, and the nation at large.
-</p>
+body{
+    margin-left: 18px;
+    margin-top: 18px;
+}
+
+body{
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-size : 13px;
+    color : #474747;
+    background-color: transparent;
+}
+
+select, option{
+    font-size:13px;
+}
+
+ol.phpfmg_form{
+    list-style-type:none;
+    padding:0px;
+    margin:0px;
+}
+
+ol.phpfmg_form li{
+    margin-bottom:5px;
+    clear:both;
+    display:block;
+    overflow:hidden;
+	width: 100%
+}
+
+
+.form_field, .form_required{
+    font-weight : bold;
+}
+
+.form_required{
+    color:red;
+    margin-right:8px;
+}
+
+.field_block_over{
+}
+
+.form_submit_block{
+    padding-top: 3px;
+}
+
+.text_box, .text_area, .text_select {
+    width:300px;
+}
+
+.text_area{
+    height:80px;
+}
+
+.form_error_title{
+    font-weight: bold;
+    color: red;
+}
+
+.form_error{
+    background-color: #F4F6E5;
+    border: 1px dashed #ff0000;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.form_error_highlight{
+    background-color: #F4F6E5;
+    border-bottom: 1px dashed #ff0000;
+}
+
+div.instruction_error{
+    color: red;
+    font-weight:bold;
+}
+
+hr.sectionbreak{
+    height:1px;
+    color: #ccc;
+}
+
+#one_entry_msg{
+    background-color: #F4F6E5;
+    border: 1px dashed #ff0000;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+    
+
+
+
+</style>
+
+
+
+<div class='form_description'>
+
+</div>
+
+
+
+<!--This is the code to ake the Captcha blue -->
+<script type="text/javascript">
+ var RecaptchaOptions = {
+    theme : 'clean'
+ };
+ </script>
+ <!--end captcha blue -->
+
+<form name="frmFormMail" action='' method='post' enctype='multipart/form-data' onsubmit='return fmgHandler.onsubmit(this);'>
+<input type='hidden' name='formmail_submit' value='Y'>
+<div id='err_required' class="form_error" style='display:none;'>
+    <label class='form_error_title'>Please check the required fields</label>
+</div>
+
+            
+            
+<ol class='phpfmg_form' >
+
+<li class='field_block' id='field_0_div'><div class='col_label'>
+	<label class='form_field'>First Name</label> <label class='form_required' >*</label> </div>
+	<div class='col_field'>
+	<input type="text" name="field_0"  id="field_0" value="" class='text_box'>
+	<div id='field_0_tip' class='instruction'></div>
+	</div>
+</li>
+
+<li class='field_block' id='field_1_div'><div class='col_label'>
+	<label class='form_field'>Last Name</label> <label class='form_required' >*</label> </div>
+	<div class='col_field'>
+	<input type="text" name="field_1"  id="field_1" value="" class='text_box'>
+	<div id='field_1_tip' class='instruction'></div>
+	</div>
+</li>
+
+<li class='field_block' id='field_2_div'><div class='col_label'>
+	<label class='form_field'>Email</label> <label class='form_required' >*</label> </div>
+	<div class='col_field'>
+	<input type="text" name="field_2"  id="field_2" value="" class='text_box'>
+	<div id='field_2_tip' class='instruction'></div>
+	</div>
+</li>
+
+<li class='field_block' id='field_3_div'><div class='col_label'>
+	<label class='form_field'>Occupation</label> <label class='form_required' >&nbsp;</label> </div>
+	<div class='col_field'>
+	<input type="text" name="field_3"  id="field_3" value="" class='text_box'>
+	<div id='field_3_tip' class='instruction'></div>
+	</div>
+</li>
+
+<li class='field_block' id='field_4_div'><div class='col_label'>
+	<label class='form_field'>Which volunteer opportunity(ies) interest you most? </label> <label class='form_required' >&nbsp;</label> </div>
+	<div class='col_field'>
+	<input type='checkbox' name='Checkbox01_field_4' id='field_4_0'  value="Mentor"   class='form_checkbox'  ><label class='form_choice_text' for='field_4_0'>Mentor</label><br>	
+<input type='checkbox' name='Checkbox02_field_4' id='field_4_1'  value="Tutor"   class='form_checkbox'  ><label class='form_choice_text' for='field_4_1'>Tutor</label><br>	
+<input type='checkbox' name='Checkbox03_field_4' id='field_4_2'  value="Guest Speaker"   class='form_checkbox'  ><label class='form_choice_text' for='field_4_2'>Guest Speaker</label><br>	
+<input type='checkbox' name='Checkbox04_field_4' id='field_4_3'  value="other"   class='form_checkbox'  onclick="toggleOtherInputBox('field_4','checkbox', 'field_4_3')"  ><label class='form_choice_text' for='field_4_3'>Other</label><br>	
+<input type='hidden' name='field_4_length' value='4'>	
+<input type='hidden' name='field_4_other_check' id='field_4_other_check' value='0'>	
+<input type='text' name='field_4_other' id='field_4_other' value="" class='text_box' style='display:none;' >	<div id='field_4_tip' class='instruction'></div>
+	</div>
+</li>
+
+<li class='field_block' id='field_5_div'><div class='col_label'>
+	<label class='form_field'>Comments  </label> <label class='form_required' >&nbsp;</label> </div>
+	<div class='col_field'>
+	<textarea name="field_5" id="field_5" rows=4 cols=25 class='text_area'></textarea>
+
+	<div id='field_5_tip' class='instruction'></div>
+	</div>
+</li>
+
+
+<li class='field_block' id='phpfmg_captcha_div'>
+	<div class='col_label'><label class='form_field'>Security Code:</label> <label class='form_required' >*</label> </div><div class='col_field'>
+	<script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6Le707sSAAAAABZNZG0D-9f01XZOwW3sTH9JX6u2"></script>
+
+	<noscript>
+  		<iframe src="http://www.google.com/recaptcha/api/noscript?k=6Le707sSAAAAABZNZG0D-9f01XZOwW3sTH9JX6u2" height="300" width="500" frameborder="0"></iframe><br/>
+  		<textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+  		<input type="hidden" name="recaptcha_response_field" value="manual_challenge"/>
+	</noscript>	</div>
+</li>
+
+
+            <li>
+            <div class='col_label'>&nbsp;</div>
+            <div class='form_submit_block col_field'>
+	
+                <input type="image" class="button_submit" src="../images/global/btn_submit.png" alt="Submit" width="82" height="30" title="Submit" />
+                <span id='phpfmg_processing' style='display:none;'>
+                    <img id='phpfmg_processing_gif' src='admin.php?mod=image&amp;func=processing' border=0 alt='Processing...'> <label id='phpfmg_processing_dots'></label>
+                </span>
+            </div>
+            </li>
+            
+</ol>
+            
+            
+
+
+</form>
+
+
+
+
+<script type="text/javascript">
+ /**
+*
+*  UTF-8 data encode / decode
+*  http://www.webtoolkit.info/
+*
+**/
+ 
+var Utf8 = {
+ 
+	// public method for url encoding
+	encode : function (string) {
+		string = string.replace(/\r\n/g,"\n");
+		var utftext = "";
+ 
+		for (var n = 0; n < string.length; n++) {
+ 
+			var c = string.charCodeAt(n);
+ 
+			if (c < 128) {
+				utftext += String.fromCharCode(c);
+			}
+			else if((c > 127) && (c < 2048)) {
+				utftext += String.fromCharCode((c >> 6) | 192);
+				utftext += String.fromCharCode((c & 63) | 128);
+			}
+			else {
+				utftext += String.fromCharCode((c >> 12) | 224);
+				utftext += String.fromCharCode(((c >> 6) & 63) | 128);
+				utftext += String.fromCharCode((c & 63) | 128);
+			}
+ 
+		}
+ 
+		return utftext;
+	},
+ 
+	// public method for url decoding
+	decode : function (utftext) {
+		var string = "";
+		var i = 0;
+		var c = c1 = c2 = 0;
+ 
+		while ( i < utftext.length ) {
+ 
+			c = utftext.charCodeAt(i);
+ 
+			if (c < 128) {
+				string += String.fromCharCode(c);
+				i++;
+			}
+			else if((c > 191) && (c < 224)) {
+				c2 = utftext.charCodeAt(i+1);
+				string += String.fromCharCode(((c & 31) << 6) | (c2 & 63));
+				i += 2;
+			}
+			else {
+				c2 = utftext.charCodeAt(i+1);
+				c3 = utftext.charCodeAt(i+2);
+				string += String.fromCharCode(((c & 15) << 12) | ((c2 & 63) << 6) | (c3 & 63));
+				i += 3;
+			}
+ 
+		}
+ 
+		return string;
+	}
+ 
+}
+
+ function dd_change( n, max, prefix ){
+    if( n >= max-1 )
+        return; // the last dropdown, no need to query
+    
+    //var prefix = 'dd_' ;
+    // reset all other dropdown options
+    var next = n+1; 
+    for( var i = next; i < max; i ++ ){
+        var dd = document.getElementById(prefix +'_' + i );
+        if( dd && dd.length >= 1 ) dd.length = 1 ; // keep the first one '- select -'
+    };
+
+
+    // request drop down data from server
+    var me = this;
+    var http;
+    var isIE = navigator.appName == "Microsoft Internet Explorer";
+    if(isIE){
+        me.http = new ActiveXObject("Microsoft.XMLHTTP");
+    }else{
+        me.http = new XMLHttpRequest();
+    };
+    
+    
+    // build query string
+    var lookup = [];
+    for( var i = 0; i < next; i ++ ){
+        var v = document.getElementById(prefix +'_' +  i ).value ; 
+        lookup.push( "lookup[" + i + "]=" + escape( isIE ? Utf8.encode(v) : v ) );
+    };
+    lookup = lookup.join('&');
+    
+    var url = 'admin.php?mod=dd&func=lookup&n='+next+ '&field_name=' + prefix + '&' + lookup;
+    me.http.open('get', url);
+    me.http.onreadystatechange = function(){
+    
+        if( me.http.readyState == 4 ){
+            // rebuild the next dropdown options
+            var eNext = document.getElementById(prefix +'_' + next );
+            if( !eNext )
+                return;
+            
+            var data = me.http.responseText;    
+            var opts = String(data).split("\n");
+            for( var j = 0, J = opts.length; j < J; j ++ ){
+                eNext.options[ eNext.length ] = new Option( opts[j], opts[j], false, false );                
+            }; // for
+        }; //if
+        
+    }; 
+    me.http.send(null);
+
+ }
+ 
+    
+function PHPFMG( formID ){
+    var frmID = formID;
+    var exts = {
+        'upload_control' : '',
+        'harmful_exts'  : '.php, .html, .css, .js, .exe, .com, .bat, .vb, .vbs, scr, .inf, .reg, .lnk, .pif, .ade, .adp, .app, .bas, .chm, .cmd, .cpl, .crt, .csh, .fxp, .hlp, .hta, .ins, .isp, .jse, .ksh, .Lnk, .mda, .mdb, .mde, .mdt, .mdw, .mdz, .msc, .msi, .msp, .mst, .ops, .pcd, .prf, .prg, .pst, .scf, .scr, .sct, .shb, .shs, .url, .vbe, .wsc, .wsf, .wsh',
+        'harmful_errmsg': "File is potential harmful. Upload is not allowed.",
+        'allow_exts'  : '.jpg, .gif, .png, .bmp',
+        'allow_errmsg': "Upload is not allowed. Please check your file type."
+    };
+
+    var Form = null;
+    var err_fields=null;
+    
+    function $( id ){
+        return document.getElementById(id);
+    }
+
+    function get_form( id ){
+        var frm = 'object' == typeof($(id)) ? $(id) : eval( 'document.' + id ) ;
+        return frm ? frm : document.forms[0];
+    }
+    
+    function file_ext( f ){
+        var n = f.lastIndexOf(".");
+        return -1 == n ? '' : f.substr( n ).toLowerCase();
+    }
+    
+    function addLabelEvents(){
+        var labels = document.body.getElementsByTagName('LABEL');
+        for( var i = 0, N = labels.length; i < N; i ++ ){
+            var e = labels[i];
+            if( -1 != String(e.className).indexOf('form_choice_text') ){
+                var oid = e.getAttribute('oid'); 
+                if( !oid ) continue;
+
+                e.onmouseout = function(){ this.className = 'form_choice_text'; };
+                e.onmouseover = function(){ this.className = 'form_choice_text form_choice_over'; };
+                e.onclick = function(){
+                    try{
+                        var oid = this.getAttribute('oid'); 
+                        var O = document.getElementById(oid);
+                        O.checked = !O.checked;
+                    }
+                    catch(E){};
+                };
+            }; // if
+        }; // for
+    } 
+
+
+    function addFieldBlockEvents(){
+        var divs = document.body.getElementsByTagName('DIV');
+        for( var i = 0, N = divs.length; i < N; i ++ ){
+            var e = divs[i];
+            if( -1 != String(e.className).indexOf('field_block') ){
+                e.onmouseout = function(){  if( String(this.className).indexOf('form_error_highlight') == -1 ) this.className = 'field_block'; };
+                e.onmouseover = function(){ if( String(this.className).indexOf('form_error_highlight') == -1 ) this.className = 'field_block field_block_over'; };
+            }; // if
+        }; // for
+    } 
+
+    function removeHighlight( elements ){
+        var divs = typeof(elements) == 'object' ? elements : document.body.getElementsByTagName('DIV');
+        for( var i = 0, N = divs.length; i < N; i ++ ){
+            var e = divs[i];
+            var cn = String(e.className);
+            if( -1 != cn.indexOf('form_error_highlight') ){
+                e.className = cn.replace('form_error_highlight','');
+            }; // if
+        }; // for
+    } 
+    
+    function showProcessing(){
+        try{
+            var E = $('phpfmg_processing');
+            if( !E ) return ;
+            if( -1 != navigator.userAgent.toLowerCase().indexOf('msie') ){
+                E.style.backgroundColor='#2960AF';
+                $('phpfmg_processing_gif').style.display = 'none';
+                setInterval( 'fmgHandler.dots()', 380 );
+            };
+            E.style.display = '' ;
+        }catch(e){};
+        
+    }
+    
+    
+    this.highlight_fields = function( fields ){
+        var A = fields.split(',');
+        for( var i = 0, N = A.length; i < N; i ++ ){
+            var E = $( A[i] + '_div' );
+            if( E ){
+                E.className += ' form_error_highlight'; 
+            };
+            var T = $( A[i] + '_tip' );
+            if( T ){
+                T.className += ' instruction_error'; 
+            };
+        };
+        
+        if( A.length > 0 ) {
+            $('err_required').style.display= has_entry( fields ) ? 'none' : '';
+        };
+    }
+    
+    function has_entry( fields ){
+        var div = $('one_entry_msg'); 
+        if( !div )
+            return false;
+
+        div.style.display = fields.indexOf('phpfmg_found_entry') != -1 ? '' : 'none';
+        if( typeof(found_entry) != 'undefined' ){
+            div.innerHTML = div.innerHTML.replace(/%Entry%/gi,found_entry);
+            return true;
+        };
+        
+        return false ;
+    }
+    
+    
+    this.choice_clicked = function( id ){
+        $(id).checked = !$(id).checked ;
+    }
+    
+    
+    this.init = function(){
+        //addLabelEvents();
+        addFieldBlockEvents();
+    }
+
+    this.harmful = function(e){
+        if( 'deny' != exts['upload_control'] || e.value == '' ){
+            return true; 
+        };
+        
+        var div = $(e.id+'_div');
+        removeHighlight( [div] );
+        var ext = file_ext(e.value);
+        if( -1 != exts['harmful_exts'].toLowerCase().indexOf(ext) ){
+            this.highlight_fields(e.id);
+            alert( exts['harmful_errmsg'] );
+            return false ;
+        };
+        return true;
+    }
+    
+     
+        
+    this.is_allow = function(e){
+        if( 'allow' != exts['upload_control'] || e.value == '' ){
+            return true; 
+        };
+        
+        var div = $(e.id+'_div');
+        removeHighlight( [div] );
+        var ext = file_ext(e.value);
+        if( -1 == exts['allow_exts'].toLowerCase().indexOf(ext) ){
+            this.highlight_fields(e.id);
+            alert( exts['allow_errmsg'] );
+            return false ;
+        };
+        return true;
+    } 
+
+    this.check_upload = function(e){
+        if( '' == exts['upload_control'] )
+            return true;
+        else
+            return ( 'deny' == exts['upload_control'] ) 
+                   ? this.harmful(e) 
+                   : this.is_allow(e);
+    }
+
+    this.dots = function(){
+        $('phpfmg_processing_dots').innerHTML += '.';
+		if( $('phpfmg_processing_dots').innerHTML.length >= 38 ) {
+			$('phpfmg_processing_dots').innerHTML = '.';
+		};
+    }
+    
+    this.check_fields = function(){
+        if( !Form )
+            return true ;
+
+        var pass = true ;
+        for( var i=0, n=Form.elements.length; i < n ; i ++ ){
+          var field = Form.elements[i];
+          var type = field.length != undefined && field.type == undefined ? 'radio' : field.type ;
+          switch( type.toLowerCase() ){
+            case 'file':
+                pass = this.check_upload(field);
+                break;
+          };
+          if( !pass ) return false ;
+        };
+        
+        return true;
+    }
+    
+    this.onsubmit = function( form ){
+        Form = form ? form : get_form(frmID) ;
+        Form.action = location.href.replace('#error','');
+        if( !this.check_fields() )
+            return false ;
+            
+        showProcessing();
+        return true;
+    }
+    
+}
+
+function toggleOtherInputBox( name, type, id ){
+    var field = document.getElementById(id);
+    if( !field ) return ;
+    var box = document.getElementById(name+'_other');
+    var other_check = document.getElementById(name+'_other_check'); 
+    if( !box || !other_check ) return ;
+    
+    switch( type.toLowerCase() ){
+        case 'checkbox':
+            box.style.display = field.checked ? '' : 'none';
+            other_check.value = field.checked ? 1 : 0 ; 
+            break;
+        case 'radio':
+            for( var i=0,n=document.forms.length; i < n; i ++ ){
+                try{
+                    var r = eval( 'document.forms['+i+'].'+name );
+                    if( r ){
+                        box.style.display = r[r.length-1].checked ? '' : 'none';
+                        other_check.value = r[r.length-1].checked ? 1 : 0 ; 
+                    };
+                }catch(err){};
+            };
+            break;
+        case 'select':
+            box.style.display = field.options[field.options.length-1].selected ? '' : 'none';
+            other_check.value = field.options[field.options.length-1].selected ? 1 : 0 ;
+            break;
+    };
+    
+}
+
+
+
+var fmgHandler = new PHPFMG();
+fmgHandler.init();
+
+
+</script>
+
+<div class='form_footer'>
+
+</div>
+
+	<br><br>
+	
+	<div style="padding-left:10px; font-size:11px;color:#cccccc;text-decoration:none;">
+		:: <a href="http://phpfmg.sourceforge.net" target="_blank" title="Free Mailform Maker: Create read-to-use Web Forms in a flash" style="color:#cccccc;text-decoration:none;font-weight:bold;">PHP FormMail Generator</a> ::
+	</div>
+
+ </body>
 <h4><a class="h4" href="http://www.yearup.org/media/main.php?page=stories&amp;vid=GOKtUJFGm78&amp;filter=partners">Read student stories</a> &bull; <a class="h4" href="http://www.yearup.org/media/main.php?page=fact_sheets">Get the facts</a> &bull; <a class="h4" href="http://www.yearup.org/media/main.php?page=opportunity_blog">Stay current</a></h4>
 </div>
 <footer>
