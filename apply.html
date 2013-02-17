@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="utf-8" />
+       <title>YearUp.Org Mobile Website - Apply</title>
+       <link rel="stylesheet" type="text/css" media="screen" href="yearup_mobile.css" />
+       
+       <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<!-- for iphone
+note: "maximum-scale=5.0; minimum-scale=0.1" is possible but unnecessary?
+note: "user-scalable=true;" doesn't work, actually disallows scaling. -->
+</head>
+
+
+<body>
+<header><!--img src="http://yearup.org/images/global/logo.png" alt="Year Up Logo" /-->
+<div title="Year Up Logo" ><a href="index.html"><img class="logo" src="http://upload.wikimedia.org/wikipedia/commons/1/12/YearUpLogo.jpg" alt="Year Up Logo" /></a><!-- width="146" height="53" -->
+<!-- was going to be empty but style wasn't putting stretchy image --></div>
+
+
+<!--div class="major_link"--><!--using a word that isn't link so we can see that links get special styles automatically -->
+<a class="major_link" href="apply.html">Apply</a>
+<!--/div-->
+<!-- the main yearup website is linking directly to sub_section=newyork instead of national, oops! -->
+<a class="major_link" href="partner.html">Partner</a>
+<!-- it would be nice if browser knew your map location and sent you to the proper sub_section?? -->
+<a class="major_link" href="volunteer.html">Volunteer</a>
+
+<a class="major_link" href="donate.html">Donate</a>
+
+
+<!--<p>
+<ul>
+<li>menu 1</li>
+<li>menu 2</li>
+<li>menu 3 long</li>
+<li>menu 4 menu 4</li>
+</ul>
+</p>-->
+
+
+</header>
+<div class="news">
+<h3>Student Interest Form</h3>
+<h3 class="important_text">Thanks for your interest in Year Up.</h3>
+<div class="wFormContainer"  >
+<div class="wForm wFormWidth">
+<div class="codesection" id="code-"><script type="text/javascript">
+function getCookie(c_name)
+{
+var i,x,y,ARRcookies=document.cookie.split(";");
+for (i=0;i<ARRcookies.length;i++)
+{
+  x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+  y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+  x=x.replace(/^\s+|\s+$/g,"");
+  if (x==c_name)
+    {
+    return unescape(y);
+    }
+  }
+}
+
+base2.DOM.Element.addEventListener(document,'DOMContentLoaded',function(){
+  var cmpn = getCookie('cmpn');
+	if (cmpn != null){
+	  $("#tfa_cmpn").val(cmpn);
+	}
+},false);
+function toTitleCase(str) {
+	return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}
+
+function addTitle(source) {
+	if(!(document.querySelector)){base2.DOM.bind(document);}
+	document.addEventListener('DOMContentLoaded',
+	function(){
+		document.querySelector('#'+source).addEventListener('blur',function(){this.value=toTitleCase(this.value);},false);
+	});
+}
+
+addTitle('tfa_Firstname');
+addTitle('tfa_Middlename');
+addTitle('tfa_Lastname');
+addTitle('tfa_Streetaddressinc');
+addTitle('tfa_City');
+addTitle('tfa_NameofHSorGEDPro');
+addTitle('tfa_Firstname1');
+addTitle('tfa_Lastname1');
+
+</script>
+
+
+<script>
+base2.DOM.Element.addEventListener(document, 'DOMContentLoaded',function(){ var _pv = wFORMS.behaviors.validation.onPass;
+wFORMS.behaviors.validation.onPass = function(f,e){ document.getElementById('submit-').setAttribute('disabled','disabled');
+document.getElementById('submit-').setAttribute('style','color: grey'); document.getElementById('submit-').setAttribute('value','sending'); 
+
+return _pv(f,e);
+}; 
+
+},false);
+</script>
+
+<script>
+function _calcAge(dob){
+if(dob == 0){
+return 0;
+}
+var _now = new Date();
+var _dob = new Date(dob);
+return Math.floor( (_now-_dob) / (1000*60*60*24*365.25) );
+}
+</script>
+
+</div>
+<form method="post" action="http://yearup.tfaforms.net/responses/processor" id="id176796" class="labelsLeftAligned hintsTooltip">
+<div id="tfa_Sitec-D" class="oneField">
+<label class="preField" for="tfa_Sitec">Desired location <span class="reqMark">*</span></label> <select id="tfa_Sitec" name="tfa_Sitec" class="required calc-NotificationAddress"><option value="">Please select...</option>
+<option value="tfa_mapid79728321381" class="calcval-atlanta_admissions@yearup.org switch-c">Atlanta</option>
+<option value="tfa_mapid79728319941" class="calcval-ALarkins@YearUp.org switch-d">Baltimore</option>
+<option value="tfa_mapid79728327701" class="calcval-admissions@yearup.org switch-e">Boston</option>
+<option value="tfa_mapid79728328075" class="calcval-chicagoadmissions@yearup.org switch-f">Chicago</option>
+<option value="tfa_Miami" class="calcval-YearUpMiamiAdmission@yearup.org switch-l">Miami</option>
+<option value="tfa_mapid79728319599" class="calcval-NCR_Admissions@YearUp.org switch-g">National Capital Region</option>
+<option value="tfa_mapid79728325880" class="calcval-admissionsNYC@yearup.org switch-h">New York</option>
+<option value="tfa_mapid79728320313" class="calcval-riadmissions@yearup.org switch-i">Providence</option>
+<option value="tfa_mapid79728324714" class="calcval-seattle_admissions@yearup.org switch-j">Puget Sound</option>
+<option value="tfa_mapid79728325440" class="calcval-San_Francisco_Admissions@YearUp.org switch-k">Bay Area (San Francisco and Silicon Valley)</option></select> <br>
+</div>
+<div id="tfa_Cohortc-D" class="offstate-c offstate-d offstate-e offstate-f offstate-g offstate-h offstate-i offstate-j offstate-k offstate-l oneField" >
+<label class="preField" for="tfa_Cohortc">Desired start date: <span class="reqMark">*</span></label> <select id="tfa_Cohortc" name="tfa_Cohortc" class="required calc-CoreCohort"><option value="">Please select...</option>
+<option value="tfa_mapid79650179536" class="calcval-March 2013" selected>March 2013</option>
+<option value="tfa_September2013" class="calcval-September 2013">September 2013</option></select> <br>
+</div>
+<input type="hidden" id="tfa_Desiredstartdate" name="tfa_Desiredstartdate" value="" class=""><input type="hidden" id="tfa_NotificationEmai" name="tfa_NotificationEmai" value="" class="formula=NotificationAddress"><div id="tfa_Isthisyourfirstt-D" class="oneField">
+<label class="preField" for="tfa_Isthisyourfirstt">Is this your first time contacting Year Up? <span class="reqMark">*</span></label> <select id="tfa_Isthisyourfirstt" name="tfa_Isthisyourfirstt" class="required"><option value="">Please select...</option>
+<option value="tfa_Yes" class="">Yes</option>
+<option value="tfa_No" class="">No</option></select> <br>
+</div>
+<fieldset id="tfa_PersonalInformat" class="wfSection">
+<legend>Personal Information</legend>
+<div style="height:10px"></div>
+<div id="tfa_Firstname-D" class="oneField">
+<label class="preField" for="tfa_Firstname">First name <span class="reqMark">*</span></label> <input type="text" id="tfa_Firstname" name="tfa_Firstname" value="" size="18" class="required"> <br>
+</div>
+<div id="tfa_Middlename-D" class="oneField">
+<label class="preField" for="tfa_Middlename">Middle name</label> <input type="text" id="tfa_Middlename" name="tfa_Middlename" value="" size="18" class=""> <br>
+</div>
+<div id="tfa_Lastname-D" class="oneField">
+<label class="preField" for="tfa_Lastname">Last name <span class="reqMark">*</span></label> <input type="text" id="tfa_Lastname" name="tfa_Lastname" value="" size="40" class="required"> <br>
+</div>
+<div id="tfa_Maidenformername-D" class="oneField">
+<label class="preField" for="tfa_Maidenformername">Maiden/former name</label> <input type="text" id="tfa_Maidenformername" name="tfa_Maidenformername" value="" size="40" class=""> <br>
+</div>
+<div id="tfa_Streetaddressinc-D" class="oneField">
+<label class="preField" for="tfa_Streetaddressinc">Street address (including apt #) <span class="reqMark">*</span></label> <textarea cols="30" rows="2" id="tfa_Streetaddressinc" name="tfa_Streetaddressinc" class="required"></textarea> <br>
+</div>
+<div id="tfa_3560122938609" class="inlineSection">
+<div id="tfa_City-D" class="oneField">
+<label class="inlineLabel" for="tfa_City">City <span class="reqMark">*</span></label> <input type="text" id="tfa_City" name="tfa_City" value="" size="20" class="required"> </div>
+<div id="tfa_State-D" class="oneField">
+<label class="inlineLabel" for="tfa_State">State <span class="reqMark">*</span></label> <input type="text" id="tfa_State" name="tfa_State" value="" size="2" class="required"> </div>
+<div id="tfa_Zip-D" class="oneField">
+<label class="inlineLabel" for="tfa_Zip">Zip <span class="reqMark">*</span></label> <input type="text" id="tfa_Zip" name="tfa_Zip" value="" size="8" class="required"> </div>
+</div>
+<div id="tfa_Phone" class="inlineSection required-one">
+<div id="tfa_Home-D" class="oneField">
+<label class="inlineLabel" for="tfa_Home">Home phone</label> <input type="text" id="tfa_Home" name="tfa_Home" value="" size="13" class="validate-phone"> </div>
+<div id="tfa_Cell-D" class="oneField">
+<label class="inlineLabel" for="tfa_Cell">Cell phone</label> <input type="text" id="tfa_Cell" name="tfa_Cell" value="" size="13" class="validate-phone"> </div>
+<div id="tfa_Work-D" class="oneField">
+<label class="inlineLabel" for="tfa_Work">Work phone</label> <input type="text" id="tfa_Work" name="tfa_Work" value="" size="13" class="validate-phone"> </div>
+</div>
+<div id="tfa_Emailaddress-D" class="oneField">
+<label class="preField" for="tfa_Emailaddress">Email address</label> <input type="text" id="tfa_Emailaddress" name="tfa_Emailaddress" value="" size="40" class="validate-email"> <br>
+</div>
+
+<div id="tfa_DateofbirthMMDDY-D" class="oneField">
+<label class="preField" for="tfa_DateofbirthMMDDY">Date of birth (MM/DD/YYYY) <span class="reqMark">*</span></label> <input type="text" id="tfa_DateofbirthMMDDY" name="tfa_DateofbirthMMDDY" value="" size="15" class="validate-custom /(0?[1-9]|1[012])[- /.](0?[1-9]|[12][0-9]|3[01])[- /.]\d\d\d\d$/ required calc-DoB"> <script type="text/javascript">
+		if(typeof wFORMS != 'undefined') {
+			if(wFORMS.behaviors.validation) {
+				
+					wFORMS.behaviors.validation.rules['customtfa_DateofbirthMMDDY'] =  { selector: 'input[class*="validate-custom"][id^="tfa_DateofbirthMMDDY"],textarea[class*="validate-custom"][id^="tfa_DateofbirthMMDDY"]', check: 'validateCustom'};
+				
+				wFORMS.behaviors.validation.messages['customtfa_DateofbirthMMDDY'] = "Please enter a valid date";
+			}
+		}</script><br>
+</div>
+<div id="tfa_Age-D" class="oneField">
+<label style="display:none" class="preField" for="tfa_Age">Age</label> <input style="display:none;" type="text" id="tfa_Age" name="tfa_Age" value="" size="40" class="validate-custom /(16|17|18|19|20|21|22|23|24)/ formula=_calcAge(DoB)"> <script type="text/javascript">
+		if(typeof wFORMS != 'undefined') {
+			if(wFORMS.behaviors.validation) {
+				
+					wFORMS.behaviors.validation.rules['customtfa_Age'] =  { selector: 'input[class*="validate-custom"][id^="tfa_Age"],textarea[class*="validate-custom"][id^="tfa_Age"]', check: 'validateCustom'};
+				
+				wFORMS.behaviors.validation.messages['customtfa_Age'] = "Year Up serves students between ages 18-24. For more information or a list of alternative programs, please contact our admissions office. ";
+			}
+		}</script><br>
+</div>
+
+<div id="tfa_Gender-D" class="oneField">
+<label class="preField" for="tfa_Gender">Gender</label> <select id="tfa_Gender" name="tfa_Gender" class=""><option value="">Please select...</option>
+<option value="tfa_Male" class="">Male</option>
+<option value="tfa_Female" class="">Female</option></select> <br>
+</div>
+<div id="tfa_Ifyouwishtobeide-D" class="oneField">
+<label class="preField" for="tfa_Ifyouwishtobeide">If you wish to be identified as a member of any of the following groups, please select:</label> <select id="tfa_Ifyouwishtobeide" name="tfa_Ifyouwishtobeide" class=""><option value="">Please select...</option>
+<option value="tfa_Asian" class="">Asian</option>
+<option value="tfa_BlackorAfricanAm" class="">Black or African American</option>
+<option value="tfa_HispanicorLatino" class="">Hispanic or Latino</option>
+<option value="tfa_NativeAmerican" class="">Native American</option>
+<option value="tfa_NativeHawaiianor" class="">Native Hawaiian or Other Pacific Islander</option>
+<option value="tfa_White" class="">White</option>
+<option value="tfa_TwoorMoreRacessp" class="switch-a">Two or More Races (specify)</option>
+<option value="tfa_Otherspecify" class="switch-b">Other (specify)</option></select> <br>
+</div>
+<div id="tfa_Pleasespecify-D" class="offstate-a offstate-b oneField">
+<label class="preField" for="tfa_Pleasespecify">Please specify: </label> <input type="text" id="tfa_Pleasespecify" name="tfa_Pleasespecify" value="" size="40" class=""> <br>
+</div>
+</fieldset>
+<fieldset id="tfa_Education" class="wfSection">
+<legend>Education</legend>
+<div style="height:10px"></div>
+<div id="tfa_APPHSorGEDc-D" class="oneField">
+<label class="preField" for="tfa_APPHSorGEDc">Have you received: <span class="reqMark">*</span></label> <select id="tfa_APPHSorGEDc" name="tfa_APPHSorGEDc" class="required"><option value="">Please select...</option>
+<option value="tfa_mapid81034875689" class="">High School Diploma</option>
+<option value="tfa_mapid81034871250" class="">GED Certificate</option></select> <br>
+</div>
+<div id="tfa_NameofHSorGEDPro-D" class="oneField">
+<label class="preField" for="tfa_NameofHSorGEDPro">Name of high school or GED Program <span class="reqMark">*</span></label> <input type="text" id="tfa_NameofHSorGEDPro" name="tfa_NameofHSorGEDPro" value="" size="50" class="required"> <br>
+</div>
+<div id="tfa_DateofHSGraduati-D" class="oneField">
+<label class="preField" for="tfa_DateofHSGraduati">Date of graduation/GED <span class="reqMark">*</span></label> <input type="text" id="tfa_DateofHSGraduati" name="tfa_DateofHSGraduati" value="" size="0" class="validate-custom /(0?[1-9]|1[012])[- /.](0?[1-9]|[12][0-9]|3[01])[- /.]\d\d\d\d$/ required"> <script type="text/javascript">
+		if(typeof wFORMS != 'undefined') {
+			if(wFORMS.behaviors.validation) {
+				
+					wFORMS.behaviors.validation.rules['customtfa_DateofHSGraduati'] =  { selector: 'input[class*="validate-custom"][id^="tfa_DateofHSGraduati"],textarea[class*="validate-custom"][id^="tfa_DateofHSGraduati"]', check: 'validateCustom'};
+				
+				wFORMS.behaviors.validation.messages['customtfa_DateofHSGraduati'] = "Please enter a valid date (including day). ";
+			}
+		}</script><br>
+</div>
+<div id="tfa_ProspectCollegeC-D" class="oneField">
+<label class="preField" for="tfa_ProspectCollegeC">Have you taken any college classes? <span class="reqMark">*</span></label> <select id="tfa_ProspectCollegeC" name="tfa_ProspectCollegeC" class="required"><option value="">Please select...</option>
+<option value="tfa_mapid80265394716" class="">Yes</option>
+<option value="tfa_mapid80265408817" class="">No</option></select> <br>
+</div>
+<div id="tfa_ProspectAssociat-D" class="oneField">
+<label class="preField" for="tfa_ProspectAssociat">Do you have an associate's degree or a college degree? <span class="reqMark">*</span></label> <select id="tfa_ProspectAssociat" name="tfa_ProspectAssociat" class="required"><option value="">Please select...</option>
+<option value="tfa_mapid80997989951" class="">Yes</option>
+<option value="tfa_mapid80997984210" class="">No</option></select> <br>
+</div>
+</fieldset>
+<fieldset id="tfa_Income" class="wfSection required-one">
+<legend>Income</legend>
+<div style="height:10px"></div>
+<div id="tfa_ProspectEstAnnua-D" class="oneField">
+<label class="preField" for="tfa_ProspectEstAnnua">Estimated personal income per year</label> <input type="text" id="tfa_ProspectEstAnnua" name="tfa_ProspectEstAnnua" value="" size="0" class="validate-integer"> <br>
+</div>
+<div id="tfa_ProspectEstHouse-D" class="oneField">
+<label class="preField" for="tfa_ProspectEstHouse">Estimated household income per year</label> <input type="text" id="tfa_ProspectEstHouse" name="tfa_ProspectEstHouse" value="" size="0" class="validate-integer"> <br>
+</div>
+</fieldset>
+<fieldset id="tfa_Other" class="wfSection">
+<legend>Other</legend>
+<div style="height:10px"></div>
+<div id="tfa_ProspectLegalRig-D" class="oneField">
+<label class="preField" for="tfa_ProspectLegalRig">Do you have a legal right to work in the U.S.? (See below for a list of required documents) <span class="reqMark">*</span></label> <select id="tfa_ProspectLegalRig" name="tfa_ProspectLegalRig" class="required"><option value="">Please select...</option>
+<option value="tfa_mapid81327757821" class="">Yes</option>
+<option value="tfa_mapid81327753994" class="">No</option></select> <br>
+</div>
+<div class="htmlsection" id="html-tmp-4645125188766">
+<p><strong>To answer "Yes" above you must have:</strong></p>
+<p><strong>&nbsp;- One of these documents: </strong>U.S. Passport, Permanent Resident Card, Certificate of U.S. citizenship, or Certificate of Naturalization</p>
+<p>OR</p>
+<p>&nbsp;- <strong>Two of these documents: </strong>official picture ID plus U.S. social security OR U.S. birth certificate OR U.S. citizen card.</p>
+</div>
+</fieldset>
+<input type="hidden" id="tfa_RecordTypeId" name="tfa_RecordTypeId" value="" class=""><input type="hidden" id="tfa_Studentc" name="tfa_Studentc" value="" class=""><div id="tfa_Howdidyouhearabo-D" class="oneField">
+<label class="preField" for="tfa_Howdidyouhearabo">How did you hear about Year Up? <span class="reqMark">*</span></label> <select id="tfa_Howdidyouhearabo" name="tfa_Howdidyouhearabo" class="required"><option value="">Please select...</option>
+<option value="tfa_YearUpwebsite" class="">Year Up website</option>
+<option value="tfa_Radio" class="">Radio</option>
+<option value="tfa_Church" class="">Church</option>
+<option value="tfa_Presentation" class="">Presentation</option>
+<option value="tfa_NewspaperMagazin" class="">Newspaper/Magazine</option>
+<option value="tfa_Wordofmouth" class="">Word of mouth</option>
+<option value="tfa_NonYearUpwebsite" class="">Non-Year Up website</option>
+<option value="tfa_Television" class="">Television</option>
+<option value="tfa_JobCollegeFair" class="">Job/College Fair</option>
+<option value="tfa_College" class="">College</option>
+<option value="tfa_PublicTransporta" class="">Public Transportation Ad</option>
+<option value="tfa_Other1" class="switch-m">Other</option></select> <br>
+</div>
+
+<div id="tfa_Ifotherspecify-D" class="offstate-m oneField">
+<label class="preField" for="tfa_Ifotherspecify">If other, specify:  <span class="reqMark">*</span></label> <input type="text" id="tfa_Ifotherspecify" name="tfa_Ifotherspecify" value="" size="40" class="required"> <br>
+</div>
+
+<div class="htmlsection" id="html-tmp-5285764382453"><p>If you heard about Year Up through word of mouth, please enter the name of the person who referred you:</p></div>
+<div id="tfa_Firstname1-D" class="oneField">
+<label class="preField" for="tfa_Firstname1">First name</label> <input type="text" id="tfa_Firstname1" name="tfa_Firstname1" value="" size="15" class=""> <br>
+</div>
+<div id="tfa_Lastname1-D" class="oneField">
+<label class="preField" for="tfa_Lastname1">Last name</label> <input type="text" id="tfa_Lastname1" name="tfa_Lastname1" value="" size="15" class=""> <br>
+</div>
+<div id="tfa_Thispersonis-D" class="oneField">
+<label class="preField" for="tfa_Thispersonis">This person is... </label> <select id="tfa_Thispersonis" name="tfa_Thispersonis" class=""><option value="">Please select...</option>
+<option value="tfa_YearUpStudentAlu" class="">Year Up Student/Alumni</option>
+<option value="tfa_YearUpStaff" class="">Year Up Staff</option>
+<option value="tfa_GuidanceCounselo" class="">Guidance Counselor</option>
+<option value="tfa_TeacherPrincipal" class="">Teacher/Principal</option>
+<option value="tfa_SocialWorker" class="">Social Worker</option>
+<option value="tfa_Programstaff" class="">Program staff</option>
+<option value="tfa_CoWorker" class="">Co-Worker</option>
+<option value="tfa_FriendorFamily" class="">Friend or Family</option>
+<option value="tfa_Other2" class="">Other</option></select> <br>
+</div>
+<div id="tfa_ProspectTrackInt-D" class="oneField labelsAbove">
+<label class="preField">Are you interested in any of the following fields?</label> <span id="tfa_ProspectTrackInt" class="choices"><span class="oneChoice"><input type="checkbox" value="tfa_mapid80296749878" class="" id="tfa_mapid80296749878" name="tfa_mapid80296749878"><label for="tfa_mapid80296749878" class="postField">IT (computer technical support)</label></span><br><span class="oneChoice"><input type="checkbox" value="tfa_mapid80296742963" class="" id="tfa_mapid80296742963" name="tfa_mapid80296742963"><label for="tfa_mapid80296742963" class="postField">Financial Operations</label></span><br><span class="oneChoice"><input type="checkbox" value="tfa_QualityAssurance" class="" id="tfa_QualityAssurance" name="tfa_QualityAssurance"><label for="tfa_QualityAssurance" class="postField">Quality Assurance (software testing)</label></span></span> <br><br />
+
+<div><fieldset class="captcha">
+<legend>Captcha</legend>
+<p class="instructions">Please enter the characters you see in this picture:</p>
+<div class="oneField">
+<img src="http://yearup.tfaforms.net/forms/captcha" width="200" height="60" alt="Visual CAPTCHA"><br><label class="preField">Characters</label> <input type="text" name="tfa_captcha_text" id="tfa_captcha_text"><br>
+</div>
+<div class="captchaHelp">This helps prevent automated form submissions. If you are not sure what the characters are, make your best guess. You will have another try in the next screen.<br>
+</div>
+</fieldset></div>
+
+
+<span class="actions">
+<input type="image" src="/images/global/btn_submit.png" class="primaryAction" id="submit-" name="tfa_submitAction" value="submit" />
+</span></div>
+<input type="hidden" id="tfa_ProspectIfPrintM" name="tfa_ProspectIfPrintM" value="" class=""><input type="hidden" id="tfa_Cohortcalculated" name="tfa_Cohortcalculated" value="" class="formula=CoreCohort?CoreCohort:MPMCohort">
+<input type="hidden" id="tfa_cmpn" name="tfa_cmpn" value="" class="">
+
+
+<div class="actions"><input type="hidden" value="219293" name="tfa_dbFormId" id="tfa_dbFormId"><input type="hidden" value="" name="tfa_dbResponseId" id="tfa_dbResponseId"><input type="hidden" value="3911bc9751e299e8765656f60fe473e9" name="tfa_dbControl" id="tfa_dbControl"><input type="hidden" value="40" name="tfa_dbVersionId" id="tfa_dbVersionId">
+</div>
+</form>
+</div>
+
+      <p class="supportInfo" >
+                              <a href="http://yearup.tfaforms.net/forms/help/219293" target="new" style="font-size: 0.7em;">
+                    Need assistance with this form?               </a>
+
+                      </p>
+
+</div>
+      </div>
+    </div>
+  </div>
+<h4><a class="h4" href="http://www.yearup.org/media/main.php?page=stories&amp;vid=GOKtUJFGm78&amp;filter=partners">Read student stories</a> &bull; <a class="h4" href="http://www.yearup.org/media/main.php?page=fact_sheets">Get the facts</a> &bull; <a class="h4" href="http://www.yearup.org/media/main.php?page=opportunity_blog">Stay current</a></h4>
+</div>
+<footer>
+Rough draft of Year Up mobile website. Page by mjr and ntt, February 2, 2013.
+</footer>
+</body>
+</html>
