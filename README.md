@@ -1,7 +1,8 @@
 yearup
 ======
 
-building mobile webpages for yearup.org
+Building mobile webpages for yearup.org philanthropical nonprofit group.
+
 Note: we have <a href="https://sites.google.com/a/saintannsny.org/yearup-org-project/">public google site</a> with our links, howto articles, and images
 
 [x]Q: How do we make a gh-pages branch so that we can browse? A: If using the application, 
