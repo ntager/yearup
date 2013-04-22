@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+       <title>YearUp.Org Mobile Website - Donate</title>
        <meta charset="utf-8" />
        <meta name="robots" content="noindex">
-       <title>YearUp.Org Mobile Website</title>
+       <!-- the following script tells IE < 9 to emulate html5's new tags, including
+article, section, header, footer, nav, etc. -->
+<!--[if lt IE 9]>
+<script src=
+"http://html5shiv.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+
        <link rel="stylesheet" type="text/css" media="screen" href="yearup_mobile.css" />
-       <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<!-- for iphone
-note: "maximum-scale=5.0; minimum-scale=0.1" is possible but unnecessary?
-note: "user-scalable=true;" doesn't work, actually disallows scaling. -->
+       <meta name="viewport" content="width=device-width, initial-scale=1.0;" />
+       <!-- for iphone  
+       note: "maximum-scale=5.0; minimum-scale=0.1" is possible but unnecessary?
+       note: "user-scalable=true;" doesn't work, actually disallows scaling. 
+       iphone5 might not like the viewport line as currently written -->
+       
+       <!-- now link to our copy of a modernizr script, which will supposedly
+       let us ask browsers about their capabilities, include width ... -->
+       <script src="http://modernizr-latest.js"> </script>
+       
 </head>
 
 
