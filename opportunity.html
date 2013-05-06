@@ -25,11 +25,16 @@ article, section, header, footer, nav, etc. -->
 <script  type="text/javascript">
 alert("we're gonna try Modernizr");
 
+// ps: to see this page, browse to   http://ntager.github.io/yearup/opportunity.html
+
 if ( Modernizr.mq('only all')  ) { // check whether the browser supports media queries
        alert("yes, media queries are supported");
 } else {
        alert("this browser can't do media queries");
 }
+
+// can I test for width > something?
+alert("document.documentElement.clientWidth: " + document.documentElement.clientWidth );
 
 if (Modernizr.mq('only all and (max-width: 400px)')) {
        alert("yes, max-width is 400px");
