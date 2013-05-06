@@ -24,11 +24,27 @@ article, section, header, footer, nav, etc. -->
        <script src="modernizr-latest.js"> </script>
 <script  type="text/javascript">
 alert("we're gonna try Modernizr");
-if (Modernizr.touch){
+
+if ( Modernizr.mq('only all')  ) { // check whether the browser supports media queries
+       alert("yes, media queries are supported");
+} else {
+       alert("this browser can't do media queries");
+}
+
+if (Modernizr.mq('only all and (max-width: 400px)')) {
+       alert("yes, max-width is 400px");
+} else {
+       alert("max-width is not 400. so what is it?")
+}
+
+if (Modernizr.touch){ 
+// this was one idea for detecting mobile browser, but 
+// some desktops might have touch, some mobiles might not,
+// and what we ought to care about is screen size and resolution.
    alert("Yay! Your device has a touch interface!");
 } else {
    alert("touch interface NOT detected");
-   window.location = "http://yearup.org/";
+   // window.location = "http://yearup.org/opportunity.html";
 }
 alert("finished Modernizr check 1");
 </script>
