@@ -22,10 +22,13 @@ article, section, header, footer, nav, etc. -->
        <!-- now link to our copy of a modernizr script, which will supposedly
        let us ask browsers about their capabilities, include width ... -->
        <script src="http://modernizr-latest.js"> </script>
-<script>
+<script  type="text/javascript">
+prompt("yodel");
+alert("yahoo");
 if (Modernizr.touch){
    alert("Yay! Your device has a touch interface!");
 } else {
+   alert("touch interface NOT detected");
    window.location = "http://yearup.org/";
 }
 </script>
