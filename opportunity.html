@@ -31,7 +31,7 @@ alert("document.documentElement.clientWidth=" + document.documentElement.clientW
 // see http://responsejs.com/labs/dimensions/   for more info about sizes.
 // Would window.screen.width and window.screen.height be better? They detect DEVICE width,
 // not just window size, I think.
-
+// How to check for media queries in general?
 if (Modernizr.touch && Modernizr.mq('only all and (max-width: 400px)')) { 
 // this was one idea for detecting mobile browser, but 
 // some desktops might have touch, some mobiles might not,
@@ -39,7 +39,7 @@ if (Modernizr.touch && Modernizr.mq('only all and (max-width: 400px)')) {
    alert("It's looking like you're on a mobile device!");
 } else {
    alert("It's looking like you're not on a mobile device!");
-   // window.location = "http://yearup.org/opportunity.html";
+   window.location.replace('http://yearup.org/opportunity.html');
 }
 </script>
 </head>
